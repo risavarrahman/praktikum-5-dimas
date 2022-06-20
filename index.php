@@ -1,10 +1,10 @@
 <?php
-$databaseHost = 'localhost';
-$databaseName = 'catatan';
-$databaseUsername = 'root';
-$databasePassword = '';
+$server = 'localhost';
+$dbName = 'catatan';
+$dbUsername = 'root';
+$dbPassword = '';
 
-$koneksi    = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
+$koneksi    = mysqli_connect($server, $dbName, $dbUsername, $dbPassword);
 if (!$koneksi) { //cek koneksi
     die("Tidak bisa terkoneksi ke database");
 }
